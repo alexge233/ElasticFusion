@@ -26,6 +26,8 @@ find_package(CUDA REQUIRED)
 find_package(OpenNI2 REQUIRED)
 find_package(efusion REQUIRED)
 find_package(SuiteSparse REQUIRED)
+find_library(REALSENSE_LIBRARY realsense)
+include_directories(/usr/local/lib)
 
 if(WIN32)
   find_package(RealSense QUIET)
